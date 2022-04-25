@@ -14,8 +14,10 @@ Please build and deploy each requirement before advancing to the next requiremen
 3. Create a unique identified for each coder
 4. Make sure that the email is not already used
 5. Add capacity for 10,000,000+ coders
-6. Be able to update first name.
-7. Be able to update last name
-8. Be able to update email
-9. Be able to show history of the updates
-10. Be able to operate in less than 1 ms per call
+6. Be able to delete a user
+7. Be able to undo a delete for a user
+8. Be able to update first name.
+9. Be able to update last name
+10. Be able to update email
+11. Be able to show history of the updates
+12. Be able to operate in less than 1 ms per call
