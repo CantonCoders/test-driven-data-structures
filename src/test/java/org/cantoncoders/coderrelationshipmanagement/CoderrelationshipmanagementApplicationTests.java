@@ -50,11 +50,20 @@ class CoderrelationshipmanagementApplicationTests {
 
 	@Test
 	public void test_CanGetCodeByFirstName(){
-
 		DataStore dataStore = new DataStore();
 		Coder nickTheCoder = new Coder();
 		nickTheCoder.setFirstName("Nick");
+		dataStore.add(nickTheCoder);
 		assertThat(dataStore.getCoderByFirstName("Nick")).isEqualTo(nickTheCoder);
+	}
+
+	@Test
+	public void test_GetDifferentCoderByFirstName(){
+		DataStore dataStore = new DataStore();
+		Coder camilleTheCoder = new Coder();
+		camilleTheCoder.setFirstName("Camille");
+		dataStore.add(camilleTheCoder);
+		assertThat(dataStore.getCoderByFirstName("Camille")).isEqualTo(camilleTheCoder);
 	}
 
 }
