@@ -40,4 +40,21 @@ class CoderrelationshipmanagementApplicationTests {
 		assertThat(coder.getFirstName()).isEqualTo(firstName);
 	}
 
+	@Test
+	public void test_EmailGetSet(){
+		String email = "nick@localhost";
+		Coder coder = new Coder();
+		coder.setEmail(email);
+		assertThat(coder.getEmail()).isEqualTo(email);
+	}
+
+	@Test
+	public void test_CanGetCodeByFirstName(){
+
+		DataStore dataStore = new DataStore();
+		Coder nickTheCoder = new Coder();
+		nickTheCoder.setFirstName("Nick");
+		assertThat(dataStore.getCoderByFirstName("Nick")).isEqualTo(nickTheCoder);
+	}
+
 }
