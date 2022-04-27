@@ -62,8 +62,18 @@ class CoderrelationshipmanagementApplicationTests {
 		DataStore dataStore = new DataStore();
 		Coder camilleTheCoder = new Coder();
 		camilleTheCoder.setFirstName("Camille");
+
+		Coder nickTheCoder = new Coder();
+		nickTheCoder.setFirstName("Nick");
+		dataStore.add(nickTheCoder);
 		dataStore.add(camilleTheCoder);
+
+
 		assertThat(dataStore.getCoderByFirstName("Camille")).isEqualTo(camilleTheCoder);
 	}
+
+
+
+
 
 }
